@@ -13,4 +13,10 @@ print("Is number even? ${number?.isEven}");
 number = 13;
 print("Is number even? ${number?.isEven}");
 
+late int? mark;
+mark=null;
+print(mark);
+mark=15;
+print(mark);
+
 }
