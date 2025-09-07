@@ -10,4 +10,7 @@ void check(int num){
 void main(){
   check(9);
   check(8);
+  check(8977);
+  check(753);
+  check(3050);
 }
