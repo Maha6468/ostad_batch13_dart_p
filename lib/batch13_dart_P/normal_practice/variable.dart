@@ -1,7 +1,11 @@
-void maha(String name){
-  print("hello $name");
+
+
+int add(int a ,int b){
+  return a+b;
 }
+
+
 void main(){
-  maha("maha");
-  maha("nilufa ");
+  int result=add(8, 5);
+  print("sum is $result");
 }
