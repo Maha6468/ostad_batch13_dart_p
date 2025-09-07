@@ -1,10 +1,7 @@
-void main(){
-  maha();
+void maha(String name){
+  print("hello $name");
 }
-
-maha(){
-  print("Enter 2 number:");
-  int a=5,b=6,sum;
-  sum=a+b;
-  print(sum);
+void main(){
+  maha("maha");
+  maha("nilufa ");
 }
