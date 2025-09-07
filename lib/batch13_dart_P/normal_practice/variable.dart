@@ -1,12 +1,10 @@
 void main(){
-  add(5,5);
-  add(5,7);
-  add(20,5,);
+  maha();
 }
 
-add(int a,int b,){
-  var x=a;
-  var y=b;
-  var sum=x+y;
+maha(){
+  print("Enter 2 number:");
+  int a=5,b=6,sum;
+  sum=a+b;
   print(sum);
 }
