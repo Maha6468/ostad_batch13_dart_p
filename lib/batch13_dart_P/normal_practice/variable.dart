@@ -1,11 +1,13 @@
-
-
-int add(int a ,int b){
-  return a+b;
+void check(int num){
+  if(num%2==0){
+    print("$num is even number.");
+  }
+  else{
+    print("$num is odd number.");
+  }
 }
 
-
 void main(){
-  int result=add(8, 5);
-  print("sum is $result");
+  check(9);
+  check(8);
 }
