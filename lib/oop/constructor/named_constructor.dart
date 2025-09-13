@@ -3,8 +3,7 @@ class Person{
   int age;
   Person(this.name, this.age);
 
-  Person.defult():name="chad",
-  age=4;
+  Person.defult():name="chad",age=4;
 
 }
 void main(){
