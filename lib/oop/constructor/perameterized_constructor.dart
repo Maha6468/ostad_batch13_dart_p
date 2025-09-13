@@ -1,11 +1,15 @@
-class Car{
-  String brand;
-  int year;
-  String color;
+class Employee {
+  String name;
+  String department;
+  int salary;
 
-  Car(this.brand,this.year,this.color);
+  Employee(this.name, this.department, {this.salary = 30000});
 }
-void main(){
- var c1=Car("Toyota",2028, "Red");
- print("My car Brand is ${c1.brand},\nIt bought ${c1.year},\nIt's color is ${c1.color} ");
+
+void main() {
+  var e1 = Employee("Mina", "HR"); // salary=30000 default
+  var e2 = Employee("Rana", "IT", salary: 50000);
+
+  print("${e1.name} - ${e1.department} - ${e1.salary}");
+  print("${e2.name} - ${e2.department} - ${e2.salary}");
 }
