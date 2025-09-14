@@ -1,15 +1,23 @@
-class Employee {
-  String name;
-  String department;
-  int salary;
+class Book {
+  String title;
+  String author;
 
-  Employee(this.name, this.department, {this.salary = 30000});
+  // Normal constructor
+  Book(this.title, this.author);
+
+  // Named constructor
+  Book.withoutAuthor(this.title) : author = "Unknown";
+
+  void show() {
+    print("Title: $title, Author: $author");
+  }
 }
 
 void main() {
-  var e1 = Employee("Mina", "HR"); // salary=30000 default
-  var e2 = Employee("Rana", "IT", salary: 50000);
+  Book b1 = Book("Dart Programming", "John Doe");
+  Book b2 = Book.withoutAuthor("Flutter Guide");
 
-  print("${e1.name} - ${e1.department} - ${e1.salary}");
-  print("${e2.name} - ${e2.department} - ${e2.salary}");
+  b1.show();
+  b2.show();
+
 }
