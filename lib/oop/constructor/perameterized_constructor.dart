@@ -1,23 +1,27 @@
-class Book {
-  String title;
-  String author;
+class Student {
+  String name;
+  int age;
 
   // Normal constructor
-  Book(this.title, this.author);
+  Student(this.name, this.age);
 
-  // Named constructor
-  Book.withoutAuthor(this.title) : author = "Unknown";
+  // Named constructors
+  Student.fromSchool(this.name) : age = 16;
+  Student.fromCollege(this.name) : age = 20;
 
   void show() {
-    print("Title: $title, Author: $author");
+    print("Name: $name, Age: $age");
   }
 }
 
 void main() {
-  Book b1 = Book("Dart Programming", "John Doe");
-  Book b2 = Book.withoutAuthor("Flutter Guide");
+  Student s1 = Student("Rana", 18);
+  Student s2 = Student.fromSchool("Mina");
+  Student s3 = Student.fromCollege("Sajib");
+  Student s4=Student.fromCollege('Maha');
 
-  b1.show();
-  b2.show();
-
+  s1.show();
+  s2.show();
+  s3.show();
+  s4.show();
 }
