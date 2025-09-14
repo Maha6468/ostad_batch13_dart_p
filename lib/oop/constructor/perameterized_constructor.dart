@@ -6,7 +6,7 @@ class Student {
   Student(this.name, this.age);
 
   // Named constructors
-  Student.fromSchool(this.name) : age = 16;
+  Student.fromSchool(): name="mahab",age = 16;
   Student.fromCollege(this.name) : age = 20;
 
   void show() {
@@ -15,8 +15,8 @@ class Student {
 }
 
 void main() {
-  Student s1 = Student("Rana", 18);
-  Student s2 = Student.fromSchool("Mina");
+  var s1 = Student("Rana", 18);
+  Student s2 = Student.fromSchool();
   Student s3 = Student.fromCollege("Sajib");
   Student s4=Student.fromCollege('Maha');
 
