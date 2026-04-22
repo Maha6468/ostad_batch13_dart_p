@@ -8,7 +8,7 @@ ArgParser buildParser() {
       'help',
       abbr: 'h',
       negatable: false,
-      help: 'Print this usag information.',
+      help: 'Print this usage information.',
     )
     ..addFlag(
       'verbose',
